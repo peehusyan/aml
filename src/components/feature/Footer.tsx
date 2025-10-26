@@ -33,25 +33,25 @@ export default function Footer() {
             </p>
             <div className="flex space-x-4">
               <a
-                href="#"
+                href="https://www.facebook.com/share/19mvCsEY7U"
                 className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-yellow-400 hover:text-black transition-colors cursor-pointer"
               >
                 <i className="ri-facebook-fill"></i>
               </a>
               <a
-                href="#"
+                href="https://youtube.com/@alliancemedialabs"
                 className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-yellow-400 hover:text-black transition-colors cursor-pointer"
               >
-                <i className="ri-twitter-fill"></i>
+                <i className="ri-youtube-fill"></i>
               </a>
               <a
-                href="#"
+                href="https://www.instagram.com/alliancemedialabs"
                 className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-yellow-400 hover:text-black transition-colors cursor-pointer"
               >
                 <i className="ri-instagram-line"></i>
               </a>
               <a
-                href="#"
+                href="https://www.linkedin.com/company/alliance-media-labs"
                 className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-yellow-400 hover:text-black transition-colors cursor-pointer"
               >
                 <i className="ri-linkedin-fill"></i>
