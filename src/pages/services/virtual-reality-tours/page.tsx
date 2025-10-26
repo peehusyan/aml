@@ -96,13 +96,13 @@ export default function VirtualRealityToursPage() {
               </p>
               <div className="flex flex-wrap gap-4">
                 <Link
-                  to="/#contact"
+                  to="/contact"
                   className="bg-yellow-400 text-black px-8 py-4 rounded-full font-semibold hover:bg-yellow-300 transition-colors whitespace-nowrap cursor-pointer"
                 >
                   Get Quote
                 </Link>
                 <Link
-                  to="/#portfolio"
+                  to="/portfolio"
                   className="border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-black transition-colors whitespace-nowrap cursor-pointer"
                 >
                   View Portfolio
