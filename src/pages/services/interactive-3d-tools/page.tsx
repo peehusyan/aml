@@ -1,7 +1,6 @@
-
-import Header from '../../../components/feature/Header';
-import Footer from '../../../components/feature/Footer';
-import { Link } from 'react-router-dom';
+import Header from "../../../components/feature/Header";
+import Footer from "../../../components/feature/Footer";
+import { Link } from "react-router-dom";
 
 export default function Interactive3DToolsPage() {
   return (
@@ -26,17 +25,18 @@ export default function Interactive3DToolsPage() {
                 Interactive 3D Tools
               </h1>
               <p className="text-xl md:text-2xl text-white mb-8 leading-relaxed drop-shadow-lg">
-                Custom web-based 3D configurators and interactive visualization platforms that engage and convert prospects.
+                Custom web-based 3D configurators and interactive visualization
+                platforms that engage and convert prospects.
               </p>
               <div className="flex flex-wrap gap-4">
                 <Link
-                  to="/#contact"
+                  to="/contact"
                   className="bg-yellow-400 text-black px-8 py-4 rounded-full font-semibold hover:bg-yellow-300 transition-colors whitespace-nowrap cursor-pointer"
                 >
                   Get Quote
                 </Link>
                 <Link
-                  to="/#portfolio"
+                  to="/portfolio"
                   className="border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-black transition-colors whitespace-nowrap cursor-pointer"
                 >
                   View Portfolio
@@ -55,7 +55,8 @@ export default function Interactive3DToolsPage() {
               </h2>
               <div className="w-20 h-1 bg-yellow-400 mx-auto mb-6"></div>
               <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-                Engage your clients with cutting‑edge interactive 3D tools that allow real‑time customization and exploration
+                Engage your clients with cutting‑edge interactive 3D tools that
+                allow real‑time customization and exploration
               </p>
             </div>
 
@@ -64,48 +65,78 @@ export default function Interactive3DToolsPage() {
                 <div className="w-16 h-16 bg-yellow-400 rounded-xl flex items-center justify-center mb-6">
                   <i className="ri-settings-3-line text-2xl text-black"></i>
                 </div>
-                <h3 className="text-xl font-bold text-black mb-4">Real-Time Customization</h3>
-                <p className="text-gray-600">Instant material changes, color variations, and layout modifications with live 3D updates.</p>
+                <h3 className="text-xl font-bold text-black mb-4">
+                  Real-Time Customization
+                </h3>
+                <p className="text-gray-600">
+                  Instant material changes, color variations, and layout
+                  modifications with live 3D updates.
+                </p>
               </div>
 
               <div className="bg-gray-50 rounded-2xl p-8 hover:shadow-xl transition-shadow">
                 <div className="w-16 h-16 bg-yellow-400 rounded-xl flex items-center justify-center mb-6">
                   <i className="ri-smartphone-line text-2xl text-black"></i>
                 </div>
-                <h3 className="text-xl font-bold text-black mb-4">Cross-Platform Compatibility</h3>
-                <p className="text-gray-600">Seamless performance across desktop, tablet, and mobile devices with responsive design.</p>
+                <h3 className="text-xl font-bold text-black mb-4">
+                  Cross-Platform Compatibility
+                </h3>
+                <p className="text-gray-600">
+                  Seamless performance across desktop, tablet, and mobile
+                  devices with responsive design.
+                </p>
               </div>
 
               <div className="bg-gray-50 rounded-2xl p-8 hover:shadow-xl transition-shadow">
                 <div className="w-16 h-16 bg-yellow-400 rounded-xl flex items-center justify-center mb-6">
                   <i className="ri-hand-heart-line text-2xl text-black"></i>
                 </div>
-                <h3 className="text-xl font-bold text-black mb-4">Intuitive User Interface</h3>
-                <p className="text-gray-600">User-friendly controls and navigation that make complex 3D interactions simple and enjoyable.</p>
+                <h3 className="text-xl font-bold text-black mb-4">
+                  Intuitive User Interface
+                </h3>
+                <p className="text-gray-600">
+                  User-friendly controls and navigation that make complex 3D
+                  interactions simple and enjoyable.
+                </p>
               </div>
 
               <div className="bg-gray-50 rounded-2xl p-8 hover:shadow-xl transition-shadow">
                 <div className="w-16 h-16 bg-yellow-400 rounded-xl flex items-center justify-center mb-6">
                   <i className="ri-database-2-line text-2xl text-black"></i>
                 </div>
-                <h3 className="text-xl font-bold text-black mb-4">Dynamic Content Management</h3>
-                <p className="text-gray-600">Easy-to-use backend system for updating 3D models, materials, and configuration options.</p>
+                <h3 className="text-xl font-bold text-black mb-4">
+                  Dynamic Content Management
+                </h3>
+                <p className="text-gray-600">
+                  Easy-to-use backend system for updating 3D models, materials,
+                  and configuration options.
+                </p>
               </div>
 
               <div className="bg-gray-50 rounded-2xl p-8 hover:shadow-xl transition-shadow">
                 <div className="w-16 h-16 bg-yellow-400 rounded-xl flex items-center justify-center mb-6">
                   <i className="ri-share-line text-2xl text-black"></i>
                 </div>
-                <h3 className="text-xl font-bold text-black mb-4">Social Sharing</h3>
-                <p className="text-gray-600">Built-in sharing capabilities allowing users to save and share their custom configurations.</p>
+                <h3 className="text-xl font-bold text-black mb-4">
+                  Social Sharing
+                </h3>
+                <p className="text-gray-600">
+                  Built-in sharing capabilities allowing users to save and share
+                  their custom configurations.
+                </p>
               </div>
 
               <div className="bg-gray-50 rounded-2xl p-8 hover:shadow-xl transition-shadow">
                 <div className="w-16 h-16 bg-yellow-400 rounded-xl flex items-center justify-center mb-6">
                   <i className="ri-bar-chart-line text-2xl text-black"></i>
                 </div>
-                <h3 className="text-xl font-bold text-black mb-4">Analytics Integration</h3>
-                <p className="text-gray-600">Comprehensive analytics tracking user interactions and popular configuration choices.</p>
+                <h3 className="text-xl font-bold text-black mb-4">
+                  Analytics Integration
+                </h3>
+                <p className="text-gray-600">
+                  Comprehensive analytics tracking user interactions and popular
+                  configuration choices.
+                </p>
               </div>
             </div>
           </div>
@@ -120,7 +151,8 @@ export default function Interactive3DToolsPage() {
               </h2>
               <div className="w-20 h-1 bg-yellow-400 mx-auto mb-6"></div>
               <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-                Innovative interactive 3D tools that transform how clients experience and customize properties
+                Innovative interactive 3D tools that transform how clients
+                experience and customize properties
               </p>
             </div>
 
@@ -132,8 +164,13 @@ export default function Interactive3DToolsPage() {
                   className="w-full h-48 object-cover object-top"
                 />
                 <div className="p-6">
-                  <h3 className="text-xl font-bold text-black mb-2">Luxury Apartment Configurator</h3>
-                  <p className="text-gray-600 mb-4">Interactive tool allowing buyers to customize layouts, finishes, and furniture in real-time.</p>
+                  <h3 className="text-xl font-bold text-black mb-2">
+                    Luxury Apartment Configurator
+                  </h3>
+                  <p className="text-gray-600 mb-4">
+                    Interactive tool allowing buyers to customize layouts,
+                    finishes, and furniture in real-time.
+                  </p>
                   <div className="flex items-center text-sm text-gray-500">
                     <i className="ri-computer-line mr-2"></i>
                     <span>Web App • 3D Configurator</span>
@@ -148,8 +185,13 @@ export default function Interactive3DToolsPage() {
                   className="w-full h-48 object-cover object-top"
                 />
                 <div className="p-6">
-                  <h3 className="text-xl font-bold text-black mb-2">Master Plan Explorer</h3>
-                  <p className="text-gray-600 mb-4">Interactive site plan allowing exploration of entire development with unit selection.</p>
+                  <h3 className="text-xl font-bold text-black mb-2">
+                    Master Plan Explorer
+                  </h3>
+                  <p className="text-gray-600 mb-4">
+                    Interactive site plan allowing exploration of entire
+                    development with unit selection.
+                  </p>
                   <div className="flex items-center text-sm text-gray-500">
                     <i className="ri-map-2-line mr-2"></i>
                     <span>Interactive Map • Site Planning</span>
@@ -164,8 +206,13 @@ export default function Interactive3DToolsPage() {
                   className="w-full h-48 object-cover object-top"
                 />
                 <div className="p-6">
-                  <h3 className="text-xl font-bold text-black mb-2">Virtual Sales Center</h3>
-                  <p className="text-gray-600 mb-4">Comprehensive virtual showroom with interactive property models and information.</p>
+                  <h3 className="text-xl font-bold text-black mb-2">
+                    Virtual Sales Center
+                  </h3>
+                  <p className="text-gray-600 mb-4">
+                    Comprehensive virtual showroom with interactive property
+                    models and information.
+                  </p>
                   <div className="flex items-center text-sm text-gray-500">
                     <i className="ri-store-3-line mr-2"></i>
                     <span>Virtual Showroom • Sales Tool</span>
@@ -180,8 +227,13 @@ export default function Interactive3DToolsPage() {
                   className="w-full h-48 object-cover object-top"
                 />
                 <div className="p-6">
-                  <h3 className="text-xl font-bold text-black mb-2">Interactive Floor Plans</h3>
-                  <p className="text-gray-600 mb-4">Dynamic floor plan tool with furniture placement and space customization options.</p>
+                  <h3 className="text-xl font-bold text-black mb-2">
+                    Interactive Floor Plans
+                  </h3>
+                  <p className="text-gray-600 mb-4">
+                    Dynamic floor plan tool with furniture placement and space
+                    customization options.
+                  </p>
                   <div className="flex items-center text-sm text-gray-500">
                     <i className="ri-layout-line mr-2"></i>
                     <span>Floor Plans • Space Planning</span>
@@ -196,8 +248,13 @@ export default function Interactive3DToolsPage() {
                   className="w-full h-48 object-cover object-top"
                 />
                 <div className="p-6">
-                  <h3 className="text-xl font-bold text-black mb-2">AR Property Viewer</h3>
-                  <p className="text-gray-600 mb-4">Augmented reality app allowing clients to visualize properties in real environments.</p>
+                  <h3 className="text-xl font-bold text-black mb-2">
+                    AR Property Viewer
+                  </h3>
+                  <p className="text-gray-600 mb-4">
+                    Augmented reality app allowing clients to visualize
+                    properties in real environments.
+                  </p>
                   <div className="flex items-center text-sm text-gray-500">
                     <i className="ri-smartphone-line mr-2"></i>
                     <span>Mobile AR • Property Visualization</span>
@@ -212,8 +269,13 @@ export default function Interactive3DToolsPage() {
                   className="w-full h-48 object-cover object-top"
                 />
                 <div className="p-6">
-                  <h3 className="text-xl font-bold text-black mb-2">3D Building Explorer</h3>
-                  <p className="text-gray-600 mb-4">Interactive building explorer with cutaway views and detailed unit information.</p>
+                  <h3 className="text-xl font-bold text-black mb-2">
+                    3D Building Explorer
+                  </h3>
+                  <p className="text-gray-600 mb-4">
+                    Interactive building explorer with cutaway views and
+                    detailed unit information.
+                  </p>
                   <div className="flex items-center text-sm text-gray-500">
                     <i className="ri-building-line mr-2"></i>
                     <span>3D Explorer • Building Visualization</span>
@@ -229,20 +291,25 @@ export default function Interactive3DToolsPage() {
                   className="w-full h-48 object-cover object-top"
                 />
                 <div className="p-6">
-                  <h3 className="text-xl font-bold text-black mb-2">Yuu by Nahar, Mumbai</h3>
-                  <p className="text-gray-600 mb-4">Interactive residential apartment configurator allowing buyers to customize layouts, finishes, and amenities in real‑time.</p>
+                  <h3 className="text-xl font-bold text-black mb-2">
+                    Yuu by Nahar, Mumbai
+                  </h3>
+                  <p className="text-gray-600 mb-4">
+                    Interactive residential apartment configurator allowing
+                    buyers to customize layouts, finishes, and amenities in
+                    real‑time.
+                  </p>
                   <div className="flex items-center text-sm text-gray-500">
                     <i className="ri-home-4-line mr-2"></i>
                     <span>Apartment Configurator • Residential</span>
                   </div>
                 </div>
               </div>
-
             </div>
 
             <div className="text-center mt-12">
               <Link
-                to="/#portfolio"
+                to="/portfolio"
                 className="bg-yellow-400 text-black px-8 py-4 rounded-full font-semibold hover:bg-yellow-300 transition-colors whitespace-nowrap cursor-pointer"
               >
                 View Our Portfolio
@@ -266,8 +333,13 @@ export default function Interactive3DToolsPage() {
                 <div className="w-16 h-16 bg-yellow-400 rounded-xl flex items-center justify-center mb-6">
                   <i className="ri-home-4-line text-2xl text-black"></i>
                 </div>
-                <h3 className="text-2xl font-bold text-black mb-4">Property Configurators</h3>
-                <p className="text-gray-600 mb-6">Interactive tools allowing prospects to customize apartments, houses, and commercial spaces in real-time.</p>
+                <h3 className="text-2xl font-bold text-black mb-4">
+                  Property Configurators
+                </h3>
+                <p className="text-gray-600 mb-6">
+                  Interactive tools allowing prospects to customize apartments,
+                  houses, and commercial spaces in real-time.
+                </p>
                 <ul className="space-y-2 text-gray-600">
                   <li className="flex items-center space-x-2">
                     <i className="ri-check-line text-yellow-400"></i>
@@ -292,8 +364,13 @@ export default function Interactive3DToolsPage() {
                 <div className="w-16 h-16 bg-yellow-400 rounded-xl flex items-center justify-center mb-6">
                   <i className="ri-building-2-line text-2xl text-black"></i>
                 </div>
-                <h3 className="text-2xl font-bold text-black mb-4">Development Visualizers</h3>
-                <p className="text-gray-600 mb-6">Comprehensive tools showcasing entire developments with interactive site plans and building selection.</p>
+                <h3 className="text-2xl font-bold text-black mb-4">
+                  Development Visualizers
+                </h3>
+                <p className="text-gray-600 mb-6">
+                  Comprehensive tools showcasing entire developments with
+                  interactive site plans and building selection.
+                </p>
                 <ul className="space-y-2 text-gray-600">
                   <li className="flex items-center space-x-2">
                     <i className="ri-check-line text-yellow-400"></i>
@@ -318,8 +395,13 @@ export default function Interactive3DToolsPage() {
                 <div className="w-16 h-16 bg-yellow-400 rounded-xl flex items-center justify-center mb-6">
                   <i className="ri-palette-line text-2xl text-black"></i>
                 </div>
-                <h3 className="text-2xl font-bold text-black mb-4">Design Studios</h3>
-                <p className="text-gray-600 mb-6">Advanced design tools allowing clients to experiment with layouts, materials, and styling options.</p>
+                <h3 className="text-2xl font-bold text-black mb-4">
+                  Design Studios
+                </h3>
+                <p className="text-gray-600 mb-6">
+                  Advanced design tools allowing clients to experiment with
+                  layouts, materials, and styling options.
+                </p>
                 <ul className="space-y-2 text-gray-600">
                   <li className="flex items-center space-x-2">
                     <i className="ri-check-line text-yellow-400"></i>
@@ -344,8 +426,13 @@ export default function Interactive3DToolsPage() {
                 <div className="w-16 h-16 bg-yellow-400 rounded-xl flex items-center justify-center mb-6">
                   <i className="ri-presentation-line text-2xl text-black"></i>
                 </div>
-                <h3 className="text-2xl font-bold text-black mb-4">Sales Presentation Tools</h3>
-                <p className="text-gray-600 mb-6">Interactive presentation platforms designed specifically for sales teams and client meetings.</p>
+                <h3 className="text-2xl font-bold text-black mb-4">
+                  Sales Presentation Tools
+                </h3>
+                <p className="text-gray-600 mb-6">
+                  Interactive presentation platforms designed specifically for
+                  sales teams and client meetings.
+                </p>
                 <ul className="space-y-2 text-gray-600">
                   <li className="flex items-center space-x-2">
                     <i className="ri-check-line text-yellow-400"></i>
@@ -379,7 +466,8 @@ export default function Interactive3DToolsPage() {
                 </h2>
                 <div className="w-20 h-1 bg-black mx-auto mb-8"></div>
                 <p className="text-lg text-black/80">
-                  Ready to create engaging interactive experiences? Contact us for a custom quote.
+                  Ready to create engaging interactive experiences? Contact us
+                  for a custom quote.
                 </p>
               </div>
 
@@ -393,7 +481,9 @@ export default function Interactive3DToolsPage() {
                 >
                   <div className="grid md:grid-cols-2 gap-6">
                     <div>
-                      <label className="block text-sm font-medium text-gray-700 mb-2">Name *</label>
+                      <label className="block text-sm font-medium text-gray-700 mb-2">
+                        Name *
+                      </label>
                       <input
                         type="text"
                         name="name"
@@ -404,7 +494,9 @@ export default function Interactive3DToolsPage() {
                     </div>
 
                     <div>
-                      <label className="block text-sm font-medium text-gray-700 mb-2">Email *</label>
+                      <label className="block text-sm font-medium text-gray-700 mb-2">
+                        Email *
+                      </label>
                       <input
                         type="email"
                         name="email"
@@ -417,7 +509,9 @@ export default function Interactive3DToolsPage() {
 
                   <div className="grid md:grid-cols-2 gap-6">
                     <div>
-                      <label className="block text-sm font-medium text-gray-700 mb-2">Phone</label>
+                      <label className="block text-sm font-medium text-gray-700 mb-2">
+                        Phone
+                      </label>
                       <input
                         type="tel"
                         name="phone"
@@ -427,25 +521,37 @@ export default function Interactive3DToolsPage() {
                     </div>
 
                     <div>
-                      <label className="block text-sm font-medium text-gray-700 mb-2">Project Type</label>
+                      <label className="block text-sm font-medium text-gray-700 mb-2">
+                        Project Type
+                      </label>
                       <select
                         name="project_type"
                         className="w-full px-4 py-3 pr-8 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-400 focus:border-transparent text-sm"
                       >
                         <option value="">Select project type</option>
-                        <option value="configurator">Product Configurator</option>
-                        <option value="virtual-showroom">Virtual Showroom</option>
-                        <option value="interactive-floor-plan">Interactive Floor Plan</option>
+                        <option value="configurator">
+                          Product Configurator
+                        </option>
+                        <option value="virtual-showroom">
+                          Virtual Showroom
+                        </option>
+                        <option value="interactive-floor-plan">
+                          Interactive Floor Plan
+                        </option>
                         <option value="3d-viewer">3D Model Viewer</option>
                         <option value="ar-experience">AR Experience</option>
-                        <option value="custom-tool">Custom Interactive Tool</option>
+                        <option value="custom-tool">
+                          Custom Interactive Tool
+                        </option>
                         <option value="other">Other</option>
                       </select>
                     </div>
                   </div>
 
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">Project Details</label>
+                    <label className="block text-sm font-medium text-gray-700 mb-2">
+                      Project Details
+                    </label>
                     <textarea
                       name="message"
                       rows={4}
@@ -480,11 +586,12 @@ export default function Interactive3DToolsPage() {
               Ready to Engage Your Clients?
             </h2>
             <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-              Create interactive experiences that convert visitors into buyers with our cutting‑edge 3D tools.
+              Create interactive experiences that convert visitors into buyers
+              with our cutting‑edge 3D tools.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Link
-                to="/#contact"
+                to="/contact"
                 className="bg-yellow-400 text-black px-8 py-4 rounded-full font-semibold hover:bg-yellow-300 transition-colors whitespace-nowrap cursor-pointer"
               >
                 Start Your Project
@@ -493,7 +600,9 @@ export default function Interactive3DToolsPage() {
                 to="/"
                 onClick={() => {
                   setTimeout(() => {
-                    document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' });
+                    document
+                      .getElementById("services")
+                      ?.scrollIntoView({ behavior: "smooth" });
                   }, 100);
                 }}
                 className="border-2 border-yellow-400 text-yellow-400 px-8 py-4 rounded-full font-semibold hover:bg-yellow-400 hover:text-black transition-colors whitespace-nowrap cursor-pointer"

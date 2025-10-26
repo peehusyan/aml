@@ -1,7 +1,6 @@
-
-import Header from '../../../components/feature/Header';
-import Footer from '../../../components/feature/Footer';
-import { Link } from 'react-router-dom';
+import Header from "../../../components/feature/Header";
+import Footer from "../../../components/feature/Footer";
+import { Link } from "react-router-dom";
 
 export default function GraphicsBrandingPage() {
   return (
@@ -26,18 +25,18 @@ export default function GraphicsBrandingPage() {
                 Graphics & Branding Content
               </h1>
               <p className="text-xl md:text-2xl text-white mb-8 leading-relaxed drop-shadow-lg">
-                Professional graphic design and branding solutions to establish strong visual
-                identity for real estate projects.
+                Professional graphic design and branding solutions to establish
+                strong visual identity for real estate projects.
               </p>
               <div className="flex flex-wrap gap-4">
                 <Link
-                  to="/#contact"
+                  to="/contact"
                   className="bg-yellow-400 text-black px-8 py-4 rounded-full font-semibold hover:bg-yellow-300 transition-colors whitespace-nowrap cursor-pointer"
                 >
                   Get Quote
                 </Link>
                 <Link
-                  to="/#portfolio"
+                  to="/portfolio"
                   className="border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-black transition-colors whitespace-nowrap cursor-pointer"
                 >
                   View Portfolio
@@ -56,8 +55,8 @@ export default function GraphicsBrandingPage() {
               </h2>
               <div className="w-20 h-1 bg-yellow-400 mx-auto mb-6"></div>
               <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-                Create a powerful visual identity that resonates with your target audience and
-                differentiates your real estate projects
+                Create a powerful visual identity that resonates with your
+                target audience and differentiates your real estate projects
               </p>
             </div>
 
@@ -66,10 +65,12 @@ export default function GraphicsBrandingPage() {
                 <div className="w-16 h-16 bg-yellow-400 rounded-xl flex items-center justify-center mb-6">
                   <i className="ri-award-line text-2xl text-black"></i>
                 </div>
-                <h3 className="text-xl font-bold text-black mb-4">Logo & Brand Identity</h3>
+                <h3 className="text-xl font-bold text-black mb-4">
+                  Logo & Brand Identity
+                </h3>
                 <p className="text-gray-600">
-                  Distinctive logos and comprehensive brand identity systems that capture your
-                  project's essence.
+                  Distinctive logos and comprehensive brand identity systems
+                  that capture your project's essence.
                 </p>
               </div>
 
@@ -77,10 +78,12 @@ export default function GraphicsBrandingPage() {
                 <div className="w-16 h-16 bg-yellow-400 rounded-xl flex items-center justify-center mb-6">
                   <i className="ri-book-open-line text-2xl text-black"></i>
                 </div>
-                <h3 className="text-xl font-bold text-black mb-4">Marketing Collaterals</h3>
+                <h3 className="text-xl font-bold text-black mb-4">
+                  Marketing Collaterals
+                </h3>
                 <p className="text-gray-600">
-                  Professional brochures, flyers, and sales materials that effectively communicate
-                  your value proposition.
+                  Professional brochures, flyers, and sales materials that
+                  effectively communicate your value proposition.
                 </p>
               </div>
 
@@ -88,10 +91,12 @@ export default function GraphicsBrandingPage() {
                 <div className="w-16 h-16 bg-yellow-400 rounded-xl flex items-center justify-center mb-6">
                   <i className="ri-global-line text-2xl text-black"></i>
                 </div>
-                <h3 className="text-xl font-bold text-black mb-4">Digital Assets</h3>
+                <h3 className="text-xl font-bold text-black mb-4">
+                  Digital Assets
+                </h3>
                 <p className="text-gray-600">
-                  Website graphics, social media templates, and digital marketing materials optimized
-                  for online platforms.
+                  Website graphics, social media templates, and digital
+                  marketing materials optimized for online platforms.
                 </p>
               </div>
 
@@ -99,10 +104,12 @@ export default function GraphicsBrandingPage() {
                 <div className="w-16 h-16 bg-yellow-400 rounded-xl flex items-center justify-center mb-6">
                   <i className="ri-signpost-line text-2xl text-black"></i>
                 </div>
-                <h3 className="text-xl font-bold text-black mb-4">Signage & Wayfinding</h3>
+                <h3 className="text-xl font-bold text-black mb-4">
+                  Signage & Wayfinding
+                </h3>
                 <p className="text-gray-600">
-                  Professional signage systems for sales offices, construction sites, and property
-                  developments.
+                  Professional signage systems for sales offices, construction
+                  sites, and property developments.
                 </p>
               </div>
 
@@ -110,10 +117,12 @@ export default function GraphicsBrandingPage() {
                 <div className="w-16 h-16 bg-yellow-400 rounded-xl flex items-center justify-center mb-6">
                   <i className="ri-presentation-line text-2xl text-black"></i>
                 </div>
-                <h3 className="text-xl font-bold text-black mb-4">Presentation Design</h3>
+                <h3 className="text-xl font-bold text-black mb-4">
+                  Presentation Design
+                </h3>
                 <p className="text-gray-600">
-                  Compelling presentation templates and pitch decks for investor meetings and client
-                  presentations.
+                  Compelling presentation templates and pitch decks for investor
+                  meetings and client presentations.
                 </p>
               </div>
 
@@ -121,10 +130,12 @@ export default function GraphicsBrandingPage() {
                 <div className="w-16 h-16 bg-yellow-400 rounded-xl flex items-center justify-center mb-6">
                   <i className="ri-layout-line text-2xl text-black"></i>
                 </div>
-                <h3 className="text-xl font-bold text-black mb-4">Layout & Typography</h3>
+                <h3 className="text-xl font-bold text-black mb-4">
+                  Layout & Typography
+                </h3>
                 <p className="text-gray-600">
-                  Professional layout design and typography systems that ensure consistent brand
-                  communication.
+                  Professional layout design and typography systems that ensure
+                  consistent brand communication.
                 </p>
               </div>
             </div>
@@ -140,8 +151,8 @@ export default function GraphicsBrandingPage() {
               </h2>
               <div className="w-20 h-1 bg-yellow-400 mx-auto mb-6"></div>
               <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-                Creative branding solutions that establish strong visual identities for real estate
-                projects
+                Creative branding solutions that establish strong visual
+                identities for real estate projects
               </p>
             </div>
 
@@ -153,9 +164,12 @@ export default function GraphicsBrandingPage() {
                   className="w-full h-48 object-cover object-top"
                 />
                 <div className="p-6">
-                  <h3 className="text-xl font-bold text-black mb-2">Prestige Towers</h3>
+                  <h3 className="text-xl font-bold text-black mb-2">
+                    Prestige Towers
+                  </h3>
                   <p className="text-gray-600 mb-4">
-                    Complete brand identity for luxury high-rise development with premium positioning.
+                    Complete brand identity for luxury high-rise development
+                    with premium positioning.
                   </p>
                   <div className="flex items-center text-sm text-gray-500">
                     <i className="ri-palette-line mr-2"></i>
@@ -171,9 +185,12 @@ export default function GraphicsBrandingPage() {
                   className="w-full h-48 object-cover object-top"
                 />
                 <div className="p-6">
-                  <h3 className="text-xl font-bold text-black mb-2">Urban Living Brochure</h3>
+                  <h3 className="text-xl font-bold text-black mb-2">
+                    Urban Living Brochure
+                  </h3>
                   <p className="text-gray-600 mb-4">
-                    Comprehensive sales brochure showcasing modern residential development features.
+                    Comprehensive sales brochure showcasing modern residential
+                    development features.
                   </p>
                   <div className="flex items-center text-sm text-gray-500">
                     <i className="ri-book-open-line mr-2"></i>
@@ -189,9 +206,12 @@ export default function GraphicsBrandingPage() {
                   className="w-full h-48 object-cover object-top"
                 />
                 <div className="p-6">
-                  <h3 className="text-xl font-bold text-black mb-2">Property Portal Website</h3>
+                  <h3 className="text-xl font-bold text-black mb-2">
+                    Property Portal Website
+                  </h3>
                   <p className="text-gray-600 mb-4">
-                    User-friendly website design with advanced property search and virtual tours.
+                    User-friendly website design with advanced property search
+                    and virtual tours.
                   </p>
                   <div className="flex items-center text-sm text-gray-500">
                     <i className="ri-global-line mr-2"></i>
@@ -207,9 +227,12 @@ export default function GraphicsBrandingPage() {
                   className="w-full h-48 object-cover object-top"
                 />
                 <div className="p-6">
-                  <h3 className="text-xl font-bold text-black mb-2">Social Media Campaign</h3>
+                  <h3 className="text-xl font-bold text-black mb-2">
+                    Social Media Campaign
+                  </h3>
                   <p className="text-gray-600 mb-4">
-                    Engaging social media templates and content strategy for property marketing.
+                    Engaging social media templates and content strategy for
+                    property marketing.
                   </p>
                   <div className="flex items-center text-sm text-gray-500">
                     <i className="ri-smartphone-line mr-2"></i>
@@ -226,9 +249,12 @@ export default function GraphicsBrandingPage() {
                   className="w-full h-48 object-cover object-top"
                 />
                 <div className="p-6">
-                  <h3 className="text-xl font-bold text-black mb-2">Development Signage</h3>
+                  <h3 className="text-xl font-bold text-black mb-2">
+                    Development Signage
+                  </h3>
                   <p className="text-gray-600 mb-4">
-                    Comprehensive signage system for large-scale mixed-use development project.
+                    Comprehensive signage system for large-scale mixed-use
+                    development project.
                   </p>
                   <div className="flex items-center text-sm text-gray-500">
                     <i className="ri-signpost-line mr-2"></i>
@@ -244,9 +270,12 @@ export default function GraphicsBrandingPage() {
                   className="w-full h-48 object-cover object-top"
                 />
                 <div className="p-6">
-                  <h3 className="text-xl font-bold text-black mb-2">Investor Presentation</h3>
+                  <h3 className="text-xl font-bold text-black mb-2">
+                    Investor Presentation
+                  </h3>
                   <p className="text-gray-600 mb-4">
-                    Professional pitch deck design for major real estate investment opportunity.
+                    Professional pitch deck design for major real estate
+                    investment opportunity.
                   </p>
                   <div className="flex items-center text-sm text-gray-500">
                     <i className="ri-presentation-line mr-2"></i>
@@ -258,7 +287,7 @@ export default function GraphicsBrandingPage() {
 
             <div className="text-center mt-12">
               <Link
-                to="/#portfolio"
+                to="/portfolio"
                 className="bg-yellow-400 text-black px-8 py-4 rounded-full font-semibold hover:bg-yellow-300 transition-colors whitespace-nowrap cursor-pointer"
               >
                 View Our Portfolio
@@ -282,10 +311,12 @@ export default function GraphicsBrandingPage() {
                 <div className="w-20 h-20 bg-yellow-400 rounded-full flex items-center justify-center mx-auto mb-6">
                   <span className="text-2xl font-bold text-black">1</span>
                 </div>
-                <h3 className="text-xl font-bold text-black mb-4">Discovery & Research</h3>
+                <h3 className="text-xl font-bold text-black mb-4">
+                  Discovery & Research
+                </h3>
                 <p className="text-gray-600">
-                  Understanding your brand values, target audience, and competitive landscape to inform
-                  design decisions.
+                  Understanding your brand values, target audience, and
+                  competitive landscape to inform design decisions.
                 </p>
               </div>
 
@@ -293,10 +324,12 @@ export default function GraphicsBrandingPage() {
                 <div className="w-20 h-20 bg-yellow-400 rounded-full flex items-center justify-center mx-auto mb-6">
                   <span className="text-2xl font-bold text-black">2</span>
                 </div>
-                <h3 className="text-xl font-bold text-black mb-4">Concept Development</h3>
+                <h3 className="text-xl font-bold text-black mb-4">
+                  Concept Development
+                </h3>
                 <p className="text-gray-600">
-                  Creating multiple design concepts and exploring different creative directions based on
-                  research insights.
+                  Creating multiple design concepts and exploring different
+                  creative directions based on research insights.
                 </p>
               </div>
 
@@ -304,10 +337,12 @@ export default function GraphicsBrandingPage() {
                 <div className="w-20 h-20 bg-yellow-400 rounded-full flex items-center justify-center mx-auto mb-6">
                   <span className="text-2xl font-bold text-black">3</span>
                 </div>
-                <h3 className="text-xl font-bold text-black mb-4">Design Refinement</h3>
+                <h3 className="text-xl font-bold text-black mb-4">
+                  Design Refinement
+                </h3>
                 <p className="text-gray-600">
-                  Refining chosen concepts through iterative design process and client feedback
-                  integration.
+                  Refining chosen concepts through iterative design process and
+                  client feedback integration.
                 </p>
               </div>
 
@@ -315,10 +350,12 @@ export default function GraphicsBrandingPage() {
                 <div className="w-20 h-20 bg-yellow-400 rounded-full flex items-center justify-center mx-auto mb-6">
                   <span className="text-2xl font-bold text-black">4</span>
                 </div>
-                <h3 className="text-xl font-bold text-black mb-4">Final Delivery</h3>
+                <h3 className="text-xl font-bold text-black mb-4">
+                  Final Delivery
+                </h3>
                 <p className="text-gray-600">
-                  Delivering final designs with comprehensive brand guidelines and all necessary file
-                  formats.
+                  Delivering final designs with comprehensive brand guidelines
+                  and all necessary file formats.
                 </p>
               </div>
             </div>
@@ -340,9 +377,12 @@ export default function GraphicsBrandingPage() {
                 <div className="w-16 h-16 bg-yellow-400 rounded-xl flex items-center justify-center mb-6">
                   <i className="ri-building-line text-2xl text-black"></i>
                 </div>
-                <h3 className="text-2xl font-bold text-black mb-4">Project Branding</h3>
+                <h3 className="text-2xl font-bold text-black mb-4">
+                  Project Branding
+                </h3>
                 <p className="text-gray-600 mb-6">
-                  Complete brand identity for individual real estate projects and developments.
+                  Complete brand identity for individual real estate projects
+                  and developments.
                 </p>
                 <ul className="space-y-2 text-gray-600">
                   <li className="flex items-center space-x-2">
@@ -368,9 +408,12 @@ export default function GraphicsBrandingPage() {
                 <div className="w-16 h-16 bg-yellow-400 rounded-xl flex items-center justify-center mb-6">
                   <i className="ri-store-line text-2xl text-black"></i>
                 </div>
-                <h3 className="text-2xl font-bold text-black mb-4">Corporate Branding</h3>
+                <h3 className="text-2xl font-bold text-black mb-4">
+                  Corporate Branding
+                </h3>
                 <p className="text-gray-600 mb-6">
-                  Comprehensive brand identity for real estate companies and development firms.
+                  Comprehensive brand identity for real estate companies and
+                  development firms.
                 </p>
                 <ul className="space-y-2 text-gray-600">
                   <li className="flex items-center space-x-2">
@@ -396,9 +439,12 @@ export default function GraphicsBrandingPage() {
                 <div className="w-16 h-16 bg-yellow-400 rounded-xl flex items-center justify-center mb-6">
                   <i className="ri-smartphone-line text-2xl text-black"></i>
                 </div>
-                <h3 className="text-2xl font-bold text-black mb-4">Digital Graphics</h3>
+                <h3 className="text-2xl font-bold text-black mb-4">
+                  Digital Graphics
+                </h3>
                 <p className="text-gray-600 mb-6">
-                  Digital-first design solutions for online marketing and social media presence.
+                  Digital-first design solutions for online marketing and social
+                  media presence.
                 </p>
                 <ul className="space-y-2 text-gray-600">
                   <li className="flex items-center space-x-2">
@@ -424,9 +470,12 @@ export default function GraphicsBrandingPage() {
                 <div className="w-16 h-16 bg-yellow-400 rounded-xl flex items-center justify-center mb-6">
                   <i className="ri-printer-line text-2xl text-black"></i>
                 </div>
-                <h3 className="text-2xl font-bold text-black mb-4">Print Materials</h3>
+                <h3 className="text-2xl font-bold text-black mb-4">
+                  Print Materials
+                </h3>
                 <p className="text-gray-600 mb-6">
-                  High-quality print design for traditional marketing and sales materials.
+                  High-quality print design for traditional marketing and sales
+                  materials.
                 </p>
                 <ul className="space-y-2 text-gray-600">
                   <li className="flex items-center space-x-2">
@@ -461,7 +510,8 @@ export default function GraphicsBrandingPage() {
                 </h2>
                 <div className="w-20 h-1 bg-black mx-auto mb-8"></div>
                 <p className="text-lg text-black/80">
-                  Ready to build a powerful brand identity? Contact us for a custom quote.
+                  Ready to build a powerful brand identity? Contact us for a
+                  custom quote.
                 </p>
               </div>
 
@@ -524,12 +574,22 @@ export default function GraphicsBrandingPage() {
                       >
                         <option value="">Select service</option>
                         <option value="logo-design">Logo Design</option>
-                        <option value="brand-identity">Complete Brand Identity</option>
-                        <option value="marketing-materials">Marketing Materials</option>
-                        <option value="website-graphics">Website Graphics</option>
+                        <option value="brand-identity">
+                          Complete Brand Identity
+                        </option>
+                        <option value="marketing-materials">
+                          Marketing Materials
+                        </option>
+                        <option value="website-graphics">
+                          Website Graphics
+                        </option>
                         <option value="print-design">Print Design</option>
-                        <option value="signage">Signage & Environmental Graphics</option>
-                        <option value="comprehensive">Comprehensive Package</option>
+                        <option value="signage">
+                          Signage & Environmental Graphics
+                        </option>
+                        <option value="comprehensive">
+                          Comprehensive Package
+                        </option>
                         <option value="other">Other</option>
                       </select>
                     </div>
@@ -546,7 +606,9 @@ export default function GraphicsBrandingPage() {
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-400 focus:border-transparent text-sm resize-none"
                       placeholder="Tell us about your branding needs, target audience, style preferences, and timeline..."
                     ></textarea>
-                    <div className="text-right text-xs text-gray-500 mt-1">0/500 characters</div>
+                    <div className="text-right text-xs text-gray-500 mt-1">
+                      0/500 characters
+                    </div>
                   </div>
 
                   <button
@@ -571,8 +633,8 @@ export default function GraphicsBrandingPage() {
               Build Your Brand Legacy
             </h2>
             <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-              Create a powerful brand identity that resonates with your audience and drives business
-              growth.
+              Create a powerful brand identity that resonates with your audience
+              and drives business growth.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Link
@@ -585,7 +647,9 @@ export default function GraphicsBrandingPage() {
                 to="/"
                 onClick={() => {
                   setTimeout(() => {
-                    document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' });
+                    document
+                      .getElementById("services")
+                      ?.scrollIntoView({ behavior: "smooth" });
                   }, 100);
                 }}
                 className="border-2 border-yellow-400 text-yellow-400 px-8 py-4 rounded-full font-semibold hover:bg-yellow-400 hover:text-black transition-colors whitespace-nowrap cursor-pointer"

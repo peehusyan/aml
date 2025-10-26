@@ -1,158 +1,168 @@
-
-import { useState, useEffect } from 'react';
-import Header from '../../components/feature/Header';
-import Footer from '../../components/feature/Footer';
-import Button from '../../components/base/Button';
-import { updateSEO, addStructuredData } from '../../utils/seo';
+import { useState, useEffect } from "react";
+import Header from "../../components/feature/Header";
+import Footer from "../../components/feature/Footer";
+import Button from "../../components/base/Button";
+import { updateSEO, addStructuredData } from "../../utils/seo";
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    company: '',
-    service: '',
-    budget: '',
-    message: '',
-    timeline: ''
+    name: "",
+    email: "",
+    phone: "",
+    company: "",
+    service: "",
+    budget: "",
+    message: "",
+    timeline: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+  const [submitStatus, setSubmitStatus] = useState<
+    "idle" | "success" | "error"
+  >("idle");
 
   useEffect(() => {
     // Update SEO
     updateSEO({
-      title: 'Contact Alliance Media Labs - Get Your Real Estate Project Started',
-      description: 'Contact Alliance Media Labs for professional real estate visualization services. Get quotes for 3D walkthroughs, VR tours, architectural rendering, and more.',
-      keywords: 'contact alliance media labs, real estate visualization quote, 3D walkthrough services, VR tour pricing, architectural rendering contact',
-      canonical: `${import.meta.env.VITE_SITE_URL || 'https://example.com'}/contact`,
-      ogImage: `${import.meta.env.VITE_SITE_URL || 'https://example.com'}/og-contact.jpg`
+      title:
+        "Contact Alliance Media Labs - Get Your Real Estate Project Started",
+      description:
+        "Contact Alliance Media Labs for professional real estate visualization services. Get quotes for 3D walkthroughs, VR tours, architectural rendering, and more.",
+      keywords:
+        "contact alliance media labs, real estate visualization quote, 3D walkthrough services, VR tour pricing, architectural rendering contact",
+      canonical: `${
+        import.meta.env.VITE_SITE_URL || "https://example.com"
+      }/contact`,
+      ogImage: `${
+        import.meta.env.VITE_SITE_URL || "https://example.com"
+      }/og-contact.jpg`,
     });
 
     // Add structured data
     const structuredData = {
       "@context": "https://schema.org",
       "@type": "ContactPage",
-      "name": "Contact Alliance Media Labs",
-      "description": "Contact Alliance Media Labs for professional real estate visualization services",
-      "url": `${import.meta.env.VITE_SITE_URL || 'https://example.com'}/contact`,
-      "mainEntity": {
+      name: "Contact Alliance Media Labs",
+      description:
+        "Contact Alliance Media Labs for professional real estate visualization services",
+      url: `${import.meta.env.VITE_SITE_URL || "https://example.com"}/contact`,
+      mainEntity: {
         "@type": "Organization",
-        "name": "Alliance Media Labs",
-        "contactPoint": [
+        name: "Alliance Media Labs",
+        contactPoint: [
           {
             "@type": "ContactPoint",
-            "telephone": "+91-9988931093",
-            "contactType": "customer service"
+            telephone: "+91-9988931093",
+            contactType: "customer service",
           },
           {
             "@type": "ContactPoint",
-            "telephone": "+91-9999916744",
-            "contactType": "customer service"
+            telephone: "+91-9999916744",
+            contactType: "customer service",
           },
           {
             "@type": "ContactPoint",
-            "email": "info@alliancemedialabs.com",
-            "contactType": "customer service"
-          }
+            email: "info@alliancemedialabs.com",
+            contactType: "customer service",
+          },
         ],
-        "address": {
+        address: {
           "@type": "PostalAddress",
-          "streetAddress": "D-244, Sector 75",
-          "addressLocality": "Chandigarh",
-          "addressRegion": "Mohali",
-          "addressCountry": "IN"
-        }
-      }
+          streetAddress: "D-244, Sector 75",
+          addressLocality: "Chandigarh",
+          addressRegion: "Mohali",
+          addressCountry: "IN",
+        },
+      },
     };
 
     addStructuredData(structuredData);
   }, []);
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+  const handleInputChange = (
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+    >
+  ) => {
     const { name, value } = e.target;
-    setFormData(prev => ({
+    setFormData((prev) => ({
       ...prev,
-      [name]: value
+      [name]: value,
     }));
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
+
     try {
       const formDataToSend = new FormData();
       Object.entries(formData).forEach(([key, value]) => {
         formDataToSend.append(key, value);
       });
 
-      const response = await fetch('https://readdy.ai/api/form/submit/contact-form', {
-        method: 'POST',
-        body: new URLSearchParams(formDataToSend as any)
-      });
+      const response = await fetch(
+        "https://readdy.ai/api/form/submit/contact-form",
+        {
+          method: "POST",
+          body: new URLSearchParams(formDataToSend as any),
+        }
+      );
 
       if (response.ok) {
-        setSubmitStatus('success');
+        setSubmitStatus("success");
         setFormData({
-          name: '',
-          email: '',
-          phone: '',
-          company: '',
-          service: '',
-          budget: '',
-          message: '',
-          timeline: ''
+          name: "",
+          email: "",
+          phone: "",
+          company: "",
+          service: "",
+          budget: "",
+          message: "",
+          timeline: "",
         });
       } else {
-        setSubmitStatus('error');
+        setSubmitStatus("error");
       }
     } catch (error) {
-      setSubmitStatus('error');
+      setSubmitStatus("error");
     } finally {
       setIsSubmitting(false);
     }
   };
 
   const services = [
-    '3D Walkthrough Videos',
-    'Virtual Reality Tours',
-    '3D Renders & Isometrics',
-    'Interactive 3D Tools',
-    'Architectural Scale Models',
-    'Construction Update Videos',
-    'Location AV',
-    'Graphics & Branding',
-    'Digital Marketing'
+    "3D Walkthrough Videos",
+    "Virtual Reality Tours",
+    "3D Renders & Isometrics",
+    "Interactive 3D Tools",
+    "Architectural Scale Models",
+    "Construction Update Videos",
+    "Location AV",
+    "Graphics & Branding",
+    "Digital Marketing",
   ];
 
   const budgetRanges = [
-    'Under $5,000',
-    '$5,000 - $15,000',
-    '$15,000 - $30,000',
-    '$30,000 - $50,000',
-    '$50,000+'
+    "Under ₹5,000",
+    "₹5,000 - ₹15,000",
+    "₹15,000 - ₹30,000",
+    "₹30,000 - ₹50,000",
+    "₹50,000+",
   ];
 
-  const timelines = [
-    'ASAP',
-    '1-2 weeks',
-    '1 month',
-    '2-3 months',
-    '3+ months'
-  ];
+  const timelines = ["ASAP", "1-2 weeks", "1 month", "2-3 months", "3+ months"];
 
   return (
     <div className="min-h-screen bg-black">
       <Header />
-      
+
       {/* Hero Section */}
-      <section 
+      <section
         className="relative pt-24 pb-20 overflow-hidden"
         style={{
           backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url('https://readdy.ai/api/search-image?query=Modern%20creative%20office%20space%20with%20glass%20walls%2C%20contemporary%20architecture%2C%20professional%20meeting%20rooms%2C%20sleek%20design%20elements%2C%20warm%20lighting%2C%20minimalist%20interior%20design%2C%20business%20environment%2C%20high-tech%20workspace%2C%20clean%20lines%2C%20sophisticated%20atmosphere&width=1920&height=800&seq=contact-hero&orientation=landscape')`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center'
+          backgroundSize: "cover",
+          backgroundPosition: "center",
         }}
       >
         <div className="container mx-auto px-6 relative z-10">
@@ -162,7 +172,9 @@ export default function ContactPage() {
               <span className="block text-yellow-400">Something Amazing</span>
             </h1>
             <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-              Ready to transform your vision into reality? We&apos;re here to bring your ideas to life with cutting-edge technology and creative excellence.
+              Ready to transform your vision into reality? We&apos;re here to
+              bring your ideas to life with cutting-edge technology and creative
+              excellence.
             </p>
             <div className="flex flex-wrap justify-center gap-6 text-white">
               <div className="flex items-center space-x-2">
@@ -180,7 +192,7 @@ export default function ContactPage() {
             </div>
           </div>
         </div>
-        
+
         {/* Floating Elements */}
         <div className="absolute top-20 left-10 w-20 h-20 bg-yellow-400/20 rounded-full blur-xl animate-pulse"></div>
         <div className="absolute bottom-20 right-10 w-32 h-32 bg-blue-500/20 rounded-full blur-xl animate-pulse delay-1000"></div>
@@ -190,18 +202,29 @@ export default function ContactPage() {
       <section className="py-20 bg-gray-900">
         <div className="container mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-16 items-start">
-            
             {/* Contact Form */}
             <div className="bg-black/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-800">
               <div className="mb-8">
-                <h2 className="text-3xl font-bold text-white mb-4">Start Your Project</h2>
-                <p className="text-gray-400">Fill out the form below and we&apos;ll get back to you within 24 hours.</p>
+                <h2 className="text-3xl font-bold text-white mb-4">
+                  Start Your Project
+                </h2>
+                <p className="text-gray-400">
+                  Fill out the form below and we&apos;ll get back to you within
+                  24 hours.
+                </p>
               </div>
 
-              <form id="contact-form" data-readdy-form onSubmit={handleSubmit} className="space-y-6">
+              <form
+                id="contact-form"
+                data-readdy-form
+                onSubmit={handleSubmit}
+                className="space-y-6"
+              >
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
-                    <label className="block text-white font-medium mb-2">Full Name *</label>
+                    <label className="block text-white font-medium mb-2">
+                      Full Name *
+                    </label>
                     <input
                       type="text"
                       name="name"
@@ -213,7 +236,9 @@ export default function ContactPage() {
                     />
                   </div>
                   <div>
-                    <label className="block text-white font-medium mb-2">Email Address *</label>
+                    <label className="block text-white font-medium mb-2">
+                      Email Address *
+                    </label>
                     <input
                       type="email"
                       name="email"
@@ -228,18 +253,23 @@ export default function ContactPage() {
 
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
-                    <label className="block text-white font-medium mb-2">Phone Number</label>
+                    <label className="block text-white font-medium mb-2">
+                      Phone Number *
+                    </label>
                     <input
                       type="tel"
                       name="phone"
                       value={formData.phone}
                       onChange={handleInputChange}
+                      required
                       className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white text-sm focus:outline-none focus:border-yellow-400 transition-colors"
                       placeholder="+1 (555) 123-4567"
                     />
                   </div>
                   <div>
-                    <label className="block text-white font-medium mb-2">Company</label>
+                    <label className="block text-white font-medium mb-2">
+                      Company
+                    </label>
                     <input
                       type="text"
                       name="company"
@@ -252,7 +282,9 @@ export default function ContactPage() {
                 </div>
 
                 <div>
-                  <label className="block text-white font-medium mb-2">Service Interested In</label>
+                  <label className="block text-white font-medium mb-2">
+                    Service Interested In
+                  </label>
                   <div className="relative">
                     <select
                       name="service"
@@ -262,7 +294,9 @@ export default function ContactPage() {
                     >
                       <option value="">Select a service</option>
                       {services.map((service, index) => (
-                        <option key={index} value={service}>{service}</option>
+                        <option key={index} value={service}>
+                          {service}
+                        </option>
                       ))}
                     </select>
                     <i className="ri-arrow-down-s-line absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400 pointer-events-none"></i>
@@ -271,7 +305,9 @@ export default function ContactPage() {
 
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
-                    <label className="block text-white font-medium mb-2">Budget Range</label>
+                    <label className="block text-white font-medium mb-2">
+                      Budget Range
+                    </label>
                     <div className="relative">
                       <select
                         name="budget"
@@ -281,14 +317,18 @@ export default function ContactPage() {
                       >
                         <option value="">Select budget</option>
                         {budgetRanges.map((budget, index) => (
-                          <option key={index} value={budget}>{budget}</option>
+                          <option key={index} value={budget}>
+                            {budget}
+                          </option>
                         ))}
                       </select>
                       <i className="ri-arrow-down-s-line absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400 pointer-events-none"></i>
                     </div>
                   </div>
                   <div>
-                    <label className="block text-white font-medium mb-2">Timeline</label>
+                    <label className="block text-white font-medium mb-2">
+                      Timeline
+                    </label>
                     <div className="relative">
                       <select
                         name="timeline"
@@ -298,7 +338,9 @@ export default function ContactPage() {
                       >
                         <option value="">Select timeline</option>
                         {timelines.map((timeline, index) => (
-                          <option key={index} value={timeline}>{timeline}</option>
+                          <option key={index} value={timeline}>
+                            {timeline}
+                          </option>
                         ))}
                       </select>
                       <i className="ri-arrow-down-s-line absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400 pointer-events-none"></i>
@@ -307,7 +349,9 @@ export default function ContactPage() {
                 </div>
 
                 <div>
-                  <label className="block text-white font-medium mb-2">Project Details *</label>
+                  <label className="block text-white font-medium mb-2">
+                    Project Details *
+                  </label>
                   <textarea
                     name="message"
                     value={formData.message}
@@ -343,14 +387,14 @@ export default function ContactPage() {
                   )}
                 </Button>
 
-                {submitStatus === 'success' && (
+                {submitStatus === "success" && (
                   <div className="bg-green-500/20 border border-green-500 rounded-lg p-4 text-green-400 text-center">
                     <i className="ri-check-line mr-2"></i>
                     Thank you! We&apos;ll get back to you within 24 hours.
                   </div>
                 )}
 
-                {submitStatus === 'error' && (
+                {submitStatus === "error" && (
                   <div className="bg-red-500/20 border border-red-500 rounded-lg p-4 text-red-400 text-center">
                     <i className="ri-error-warning-line mr-2"></i>
                     Something went wrong. Please try again.
@@ -362,9 +406,13 @@ export default function ContactPage() {
             {/* Contact Information */}
             <div className="space-y-8">
               <div>
-                <h2 className="text-3xl font-bold text-white mb-6">Get In Touch</h2>
+                <h2 className="text-3xl font-bold text-white mb-6">
+                  Get In Touch
+                </h2>
                 <p className="text-gray-400 text-lg leading-relaxed mb-8">
-                  Ready to elevate your real estate marketing? Our team of experts is here to help you create stunning visual content that sells properties faster and at better prices.
+                  Ready to elevate your real estate marketing? Our team of
+                  experts is here to help you create stunning visual content
+                  that sells properties faster and at better prices.
                 </p>
               </div>
 
@@ -378,8 +426,18 @@ export default function ContactPage() {
                     <div>
                       <h3 className="text-white font-semibold mb-1">Call Us</h3>
                       <div className="space-y-1">
-                        <a href="tel:+919988931093" className="text-gray-300 hover:text-yellow-400 transition-colors cursor-pointer block">+91 9988931093</a>
-                        <a href="tel:+919999916744" className="text-gray-300 hover:text-yellow-400 transition-colors cursor-pointer block">+91 9999916744</a>
+                        <a
+                          href="tel:+919988931093"
+                          className="text-gray-300 hover:text-yellow-400 transition-colors cursor-pointer block"
+                        >
+                          +91 9988931093
+                        </a>
+                        <a
+                          href="tel:+919999916744"
+                          className="text-gray-300 hover:text-yellow-400 transition-colors cursor-pointer block"
+                        >
+                          +91 9999916744
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -391,8 +449,15 @@ export default function ContactPage() {
                       <i className="ri-mail-line text-white text-xl"></i>
                     </div>
                     <div>
-                      <h3 className="text-white font-semibold mb-1">Email Us</h3>
-                      <a href="mailto:info@alliancemedialabs.com" className="text-gray-300 hover:text-blue-400 transition-colors cursor-pointer">info@alliancemedialabs.com</a>
+                      <h3 className="text-white font-semibold mb-1">
+                        Email Us
+                      </h3>
+                      <a
+                        href="mailto:info@alliancemedialabs.com"
+                        className="text-gray-300 hover:text-blue-400 transition-colors cursor-pointer"
+                      >
+                        info@alliancemedialabs.com
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -403,8 +468,17 @@ export default function ContactPage() {
                       <i className="ri-map-pin-line text-white text-xl"></i>
                     </div>
                     <div>
-                      <h3 className="text-white font-semibold mb-1">Visit Us</h3>
-                      <a href="https://maps.google.com/?q=D-244,+Sector+75,+Chandigarh,+Mohali" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-green-400 transition-colors cursor-pointer">D-244, Sector 75, Chandigarh, Mohali</a>
+                      <h3 className="text-white font-semibold mb-1">
+                        Visit Us
+                      </h3>
+                      <a
+                        href="https://maps.google.com/?q=D-244,+Sector+75,+Chandigarh,+Mohali"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-gray-300 hover:text-green-400 transition-colors cursor-pointer"
+                      >
+                        D-244, Sector 75, Chandigarh, Mohali
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -414,16 +488,36 @@ export default function ContactPage() {
               <div className="bg-black/50 backdrop-blur-sm rounded-xl p-6 border border-gray-800">
                 <h3 className="text-white font-semibold mb-4">Follow Us</h3>
                 <div className="flex space-x-4">
-                  <a href="https://linkedin.com/company/alliance-media-labs" target="_blank" rel="noopener noreferrer" className="w-12 h-12 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-yellow-400 hover:text-black transition-colors cursor-pointer">
+                  <a
+                    href="https://linkedin.com/company/alliance-media-labs"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-12 h-12 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-yellow-400 hover:text-black transition-colors cursor-pointer"
+                  >
                     <i className="ri-linkedin-fill text-xl"></i>
                   </a>
-                  <a href="https://www.instagram.com/alliancemedialabs?igsh=MWpsbzI5emhubXNxNA==" target="_blank" rel="noopener noreferrer" className="w-12 h-12 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-yellow-400 hover:text-black transition-colors cursor-pointer">
+                  <a
+                    href="https://www.instagram.com/alliancemedialabs?igsh=MWpsbzI5emhubXNxNA=="
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-12 h-12 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-yellow-400 hover:text-black transition-colors cursor-pointer"
+                  >
                     <i className="ri-instagram-line text-xl"></i>
                   </a>
-                  <a href="https://youtube.com/@alliancemedialabs?si=N8VEH2cFnl111cDM" target="_blank" rel="noopener noreferrer" className="w-12 h-12 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-yellow-400 hover:text-black transition-colors cursor-pointer">
+                  <a
+                    href="https://youtube.com/@alliancemedialabs?si=N8VEH2cFnl111cDM"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-12 h-12 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-yellow-400 hover:text-black transition-colors cursor-pointer"
+                  >
                     <i className="ri-youtube-line text-xl"></i>
                   </a>
-                  <a href="https://www.facebook.com/share/1KC5TqxSQL/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" className="w-12 h-12 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-yellow-400 hover:text-black transition-colors cursor-pointer">
+                  <a
+                    href="https://www.facebook.com/share/1KC5TqxSQL/?mibextid=wwXIfr"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-12 h-12 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-yellow-400 hover:text-black transition-colors cursor-pointer"
+                  >
                     <i className="ri-facebook-fill text-xl"></i>
                   </a>
                 </div>
@@ -431,12 +525,21 @@ export default function ContactPage() {
 
               {/* Quick Demo */}
               <div className="bg-gradient-to-r from-yellow-400/20 to-orange-500/20 border border-yellow-400/30 rounded-xl p-6 text-center">
-                <h3 className="text-white font-semibold mb-2">Need a Quick Demo?</h3>
-                <p className="text-gray-300 mb-4 text-sm">Book a 30-minute call to see our work in action</p>
-                <Button 
-                  variant="primary" 
+                <h3 className="text-white font-semibold mb-2">
+                  Need a Quick Demo?
+                </h3>
+                <p className="text-gray-300 mb-4 text-sm">
+                  Book a 30-minute call to see our work in action
+                </p>
+                <Button
+                  variant="primary"
                   size="sm"
-                  onClick={() => window.open('https://calendly.com/lakshay-alliancemedialabs/30min?month=2025-10', '_blank')}
+                  onClick={() =>
+                    window.open(
+                      "https://calendly.com/lakshay-alliancemedialabs/30min?month=2025-10",
+                      "_blank"
+                    )
+                  }
                 >
                   <i className="ri-calendar-line mr-2"></i>
                   Book Demo
@@ -452,9 +555,11 @@ export default function ContactPage() {
         <div className="container mx-auto px-6">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-white mb-4">Find Us</h2>
-            <p className="text-gray-400">Located in the heart of Chandigarh's tech hub</p>
+            <p className="text-gray-400">
+              Located in the heart of Chandigarh's tech hub
+            </p>
           </div>
-          
+
           <div className="bg-gray-900 rounded-2xl overflow-hidden border border-gray-800">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3430.2234567890123!2d76.7234567890123!3d30.7234567890123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzDCsDQzJzI0LjQiTiA3NsKwNDMnMjQuNCJF!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin"
